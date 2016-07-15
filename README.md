@@ -1,6 +1,8 @@
 # iMoBoard
 Android app for calculating maneuvering board problems
 
+![ScreenShot](dtrdatecode_screenshot.png)
+
 ## Purpose
 iMoBoard is an easy-to-use maneuvering board application developed in 2010 for mobile Android devices that solves closest-point-of-approach (CPA) and contact course/speed problems. In addition, iMoboard implements an intuitive graphical interface consisting of a digital maneuvering board for displaying contact relative motion with respect to own ship at center, and a contact line-of-sight (LOS) display for displaying contact angle-on-the-bow.
 
