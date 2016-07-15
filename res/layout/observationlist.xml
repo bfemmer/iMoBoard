@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView  
+		android:id="@+id/targetTextView03"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/contact_label"
+		android:textSize="16dp" 
+		android:textColor="@color/lime"/>
+	<TableLayout
+		  android:id="@+id/observationTable"
+		  android:orientation="horizontal"
+		  android:gravity="center"
+		  android:stretchColumns="*"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  <TableRow
+		  		android:id="@+id/obsTableRowLabel"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal">
+		  	<TextView  
+				android:id="@+id/obsTimeTextViewLabel"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/time_header"
+				android:textSize="16dp" 
+				android:textColor="@color/lime"/>
+			<TextView  
+				android:id="@+id/obsBearingTextViewLabel"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/bearing_header"
+				android:textSize="16dp" 
+				android:textColor="@color/lime"/>
+			<TextView  
+				android:id="@+id/obsRangeTextViewLabel"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/range_header"
+				android:textSize="16dp" 
+				android:textColor="@color/lime"/>
+		  </TableRow>
+	</TableLayout>
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ></ListView>
+	<TextView android:id="@android:id/empty" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="No Observations" />
+</LinearLayout>

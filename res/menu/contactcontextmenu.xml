@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/concontextdelete" android:title="@string/delete_contact_string"></item>
+    <item android:id="@+id/concontextclear" android:title="@string/clear_all_contacts_string"></item>
+    
+</menu>

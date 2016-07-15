@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:visible="true" android:enabled="true" android:id="@+id/addcontact" android:icon="@drawable/ic_menu_add" android:title="@string/add_string"></item>
+<item android:visible="true" android:enabled="true" android:id="@+id/listcontacts" android:icon="@drawable/ic_menu_sort_by_size" android:title="List"></item><item android:visible="true" android:enabled="true" android:id="@+id/deletecontact" android:title="Delete" android:icon="@drawable/ic_menu_delete"></item>
+<item android:visible="true" android:enabled="true" android:id="@+id/clearcontacts" android:title="Clear" android:icon="@drawable/ic_menu_clear_playlist"></item>
+
+<item android:visible="true" android:id="@+id/preferences" android:title="Preferences" android:enabled="true" android:icon="@drawable/ic_menu_preferences"></item>
+</menu>

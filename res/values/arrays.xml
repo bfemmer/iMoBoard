@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scaleFormats">
+    	<item>1:1</item>
+    	<item>2:1</item>
+    	<item>3:1</item>
+    	<item>4:1</item>
+    	<item>5:1</item>
+    	<item>6:1</item>
+    	<item>7:1</item>
+    	<item>8:1</item>
+    	<item>9:1</item>
+    	<item>10:1</item>
+    </string-array>
+    <string-array name="scaleFormatValues">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+    </string-array>
+    <string-array name="targetDataInputFormats">
+    	<item>@string/first_and_last_obs_string</item>
+    	<item>@string/two_most_recent_obs_string</item>
+    </string-array>
+    <string-array name="targetDataInputFormatValues">
+    	<item>1</item>
+    	<item>2</item>
+    </string-array>
+    <string-array name="colorThemes">
+    	<item>Dark Background</item>
+    	<item>Light Background</item>
+    </string-array>
+    <string-array name="colorThemeValues">
+    	<item>1</item>
+    	<item>2</item>
+    </string-array>
+</resources>

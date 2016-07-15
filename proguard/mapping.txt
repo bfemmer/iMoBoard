@@ -1,0 +1,614 @@
+com.android.vending.licensing.AESObfuscator -> com.android.vending.licensing.h:
+    byte[] IV -> a
+    javax.crypto.Cipher mEncryptor -> b
+    javax.crypto.Cipher mDecryptor -> c
+    java.lang.String obfuscate(java.lang.String) -> a
+    java.lang.String unobfuscate(java.lang.String) -> b
+com.android.vending.licensing.DeviceLimiter -> com.android.vending.licensing.p:
+    com.android.vending.licensing.Policy$LicenseResponse isDeviceAllowed$414f77c5() -> a
+com.android.vending.licensing.ILicenseResultListener -> com.android.vending.licensing.f:
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.android.vending.licensing.ILicenseResultListener$Stub -> com.android.vending.licensing.l:
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.licensing.ILicenseResultListener$Stub$Proxy -> com.android.vending.licensing.d:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.android.vending.licensing.ILicensingService -> com.android.vending.licensing.ILicensingService:
+    void checkLicense(long,java.lang.String,com.android.vending.licensing.ILicenseResultListener) -> a
+com.android.vending.licensing.ILicensingService$Stub -> com.android.vending.licensing.b:
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.licensing.ILicensingService$Stub$Proxy -> com.android.vending.licensing.r:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void checkLicense(long,java.lang.String,com.android.vending.licensing.ILicenseResultListener) -> a
+com.android.vending.licensing.LicenseChecker -> com.android.vending.licensing.m:
+    java.security.SecureRandom RANDOM -> a
+    com.android.vending.licensing.ILicensingService mService -> b
+    java.security.PublicKey mPublicKey -> c
+    android.content.Context mContext -> d
+    com.android.vending.licensing.Policy mPolicy -> e
+    android.os.Handler mHandler -> f
+    java.lang.String mPackageName -> g
+    java.lang.String mVersionCode -> h
+    java.util.Set mChecksInProgress -> i
+    java.util.Queue mPendingChecks -> j
+    java.security.PublicKey generatePublicKey(java.lang.String) -> a
+    void checkAccess(com.android.vending.licensing.LicenseCheckerCallback) -> a
+    void runChecks() -> b
+    void finishCheck(com.android.vending.licensing.LicenseValidator) -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void handleServiceConnectionError(com.android.vending.licensing.LicenseValidator) -> b
+    void cleanupService() -> c
+    void onDestroy() -> a
+    java.lang.String getVersionCode(android.content.Context,java.lang.String) -> a
+    void access$0(com.android.vending.licensing.LicenseChecker,com.android.vending.licensing.LicenseValidator) -> a
+    void access$1(com.android.vending.licensing.LicenseChecker,com.android.vending.licensing.LicenseValidator) -> b
+    android.os.Handler access$2(com.android.vending.licensing.LicenseChecker) -> a
+    java.util.Set access$3(com.android.vending.licensing.LicenseChecker) -> b
+    java.security.PublicKey access$4(com.android.vending.licensing.LicenseChecker) -> c
+com.android.vending.licensing.LicenseChecker$ResultListener -> com.android.vending.licensing.i:
+    com.android.vending.licensing.LicenseValidator mValidator -> b
+    java.lang.Runnable mOnTimeout -> c
+    com.android.vending.licensing.LicenseChecker this$0 -> a
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+    com.android.vending.licensing.LicenseValidator access$0(com.android.vending.licensing.LicenseChecker$ResultListener) -> a
+    void access$1(com.android.vending.licensing.LicenseChecker$ResultListener) -> b
+com.android.vending.licensing.LicenseChecker$ResultListener$1 -> com.android.vending.licensing.s:
+    com.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    void run() -> run
+com.android.vending.licensing.LicenseChecker$ResultListener$2 -> com.android.vending.licensing.t:
+    com.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    int val$responseCode -> b
+    java.lang.String val$signedData -> c
+    java.lang.String val$signature -> d
+    void run() -> run
+com.android.vending.licensing.LicenseCheckerCallback -> com.android.vending.licensing.j:
+    void allow() -> a
+    void dontAllow() -> b
+    void applicationError$3f9ec153() -> c
+com.android.vending.licensing.LicenseValidator -> com.android.vending.licensing.a:
+    com.android.vending.licensing.Policy mPolicy -> a
+    com.android.vending.licensing.LicenseCheckerCallback mCallback -> b
+    int mNonce -> c
+    java.lang.String mPackageName -> d
+    java.lang.String mVersionCode -> e
+    com.android.vending.licensing.DeviceLimiter mDeviceLimiter -> f
+    com.android.vending.licensing.LicenseCheckerCallback getCallback() -> a
+    int getNonce() -> b
+    java.lang.String getPackageName() -> c
+    void verify(java.security.PublicKey,int,java.lang.String,java.lang.String) -> a
+    void handleResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    void handleApplicationError$3f9ec153() -> d
+    void handleInvalidResponse() -> e
+com.android.vending.licensing.NullDeviceLimiter -> com.android.vending.licensing.c:
+    com.android.vending.licensing.Policy$LicenseResponse isDeviceAllowed$414f77c5() -> a
+com.android.vending.licensing.Obfuscator -> com.android.vending.licensing.n:
+    java.lang.String obfuscate(java.lang.String) -> a
+    java.lang.String unobfuscate(java.lang.String) -> b
+com.android.vending.licensing.Policy -> com.android.vending.licensing.k:
+    void processServerResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    boolean allowAccess() -> a
+com.android.vending.licensing.Policy$LicenseResponse -> com.android.vending.licensing.o:
+    com.android.vending.licensing.Policy$LicenseResponse LICENSED -> a
+    com.android.vending.licensing.Policy$LicenseResponse NOT_LICENSED -> b
+    com.android.vending.licensing.Policy$LicenseResponse RETRY -> c
+    com.android.vending.licensing.Policy$LicenseResponse[] ENUM$VALUES -> d
+    com.android.vending.licensing.Policy$LicenseResponse[] values() -> values
+    com.android.vending.licensing.Policy$LicenseResponse valueOf(java.lang.String) -> valueOf
+com.android.vending.licensing.PreferenceObfuscator -> com.android.vending.licensing.e:
+    android.content.SharedPreferences mPreferences -> a
+    com.android.vending.licensing.Obfuscator mObfuscator -> b
+    android.content.SharedPreferences$Editor mEditor -> c
+    void putString(java.lang.String,java.lang.String) -> a
+    java.lang.String getString(java.lang.String,java.lang.String) -> b
+    void commit() -> a
+com.android.vending.licensing.ResponseData -> com.android.vending.licensing.q:
+    int responseCode -> a
+    int nonce -> b
+    java.lang.String packageName -> c
+    java.lang.String versionCode -> d
+    java.lang.String userId -> e
+    long timestamp -> f
+    java.lang.String extra -> g
+    java.lang.String toString() -> toString
+com.android.vending.licensing.ServerManagedPolicy -> com.android.vending.licensing.u:
+    long mValidityTimestamp -> a
+    long mRetryUntil -> b
+    long mMaxRetries -> c
+    long mRetryCount -> d
+    long mLastResponseTime -> e
+    com.android.vending.licensing.Policy$LicenseResponse mLastResponse -> f
+    com.android.vending.licensing.PreferenceObfuscator mPreferences -> g
+    void processServerResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    void setRetryCount(long) -> a
+    void setValidityTimestamp(java.lang.String) -> a
+    void setRetryUntil(java.lang.String) -> b
+    void setMaxRetries(java.lang.String) -> c
+    boolean allowAccess() -> a
+    java.util.Map decodeExtras(java.lang.String) -> d
+com.android.vending.licensing.ValidationException -> com.android.vending.licensing.g:
+com.android.vending.licensing.util.Base64 -> com.android.vending.licensing.a.b:
+    byte[] ALPHABET -> a
+    byte[] WEBSAFE_ALPHABET -> b
+    byte[] DECODABET -> c
+    byte[] WEBSAFE_DECODABET -> d
+    boolean $assertionsDisabled -> e
+    java.lang.String encode(byte[]) -> a
+    int decode4to3$355785af(byte[],byte[],int,byte[]) -> a
+    byte[] decode(java.lang.String) -> a
+com.android.vending.licensing.util.Base64DecoderException -> com.android.vending.licensing.a.a:
+com.spatialind.imoboard.Contact -> com.spatialind.imoboard.am:
+    java.lang.String id -> a
+    java.util.ArrayList observationList -> b
+    void setId(java.lang.String) -> a
+    java.util.ArrayList getObservationList() -> a
+    boolean isClosing() -> b
+    java.lang.String toString() -> toString
+com.spatialind.imoboard.ContactActivity -> com.spatialind.imoboard.ContactActivity:
+    android.database.Cursor cursor -> a
+    java.lang.String contactName -> b
+    float bearing -> c
+    float range -> d
+    float course -> e
+    float speed -> f
+    float ownCourse -> g
+    float ownSpeed -> h
+    int obs_hour -> i
+    int obs_minute -> j
+    com.spatialind.imoboard.ContactDatabaseAdapter db -> k
+    android.widget.TextView targetTextView -> l
+    android.widget.TextView targetRangeTextView -> m
+    android.widget.TextView targetBearingTextView -> n
+    android.widget.TextView ownShipCourseTextView -> o
+    android.widget.TextView targetCourseTextView -> p
+    android.widget.TextView ownShipSpeedTextView -> q
+    android.widget.TextView targetSpeedTextView -> r
+    com.spatialind.imoboard.ShipCompassView targetView -> s
+    com.spatialind.imoboard.ShipCompassView ownShipView -> t
+    int ADD_OBS_DIALOG_ID -> u
+    int UPDATE_OWNSHIP_DIALOG_ID -> v
+    int TGT_SHIP_COMPASS -> w
+    int OWN_SHIP_COMPASS -> x
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void fillData() -> a
+    android.widget.TextView access$0(com.spatialind.imoboard.ContactActivity) -> a
+    android.widget.TextView access$1(com.spatialind.imoboard.ContactActivity) -> b
+    android.widget.TextView access$2(com.spatialind.imoboard.ContactActivity) -> c
+    com.spatialind.imoboard.ShipCompassView access$3(com.spatialind.imoboard.ContactActivity) -> d
+    void access$4(com.spatialind.imoboard.ContactActivity,int) -> a
+    void access$5(com.spatialind.imoboard.ContactActivity,int) -> b
+    int access$6(com.spatialind.imoboard.ContactActivity) -> e
+    void access$7(com.spatialind.imoboard.ContactActivity,float) -> a
+    void access$8(com.spatialind.imoboard.ContactActivity,float) -> b
+    void access$9(com.spatialind.imoboard.ContactActivity) -> f
+    void access$10(com.spatialind.imoboard.ContactActivity,float) -> c
+    void access$11(com.spatialind.imoboard.ContactActivity,float) -> d
+    void access$12(com.spatialind.imoboard.ContactActivity) -> g
+    float access$13(com.spatialind.imoboard.ContactActivity) -> h
+    android.widget.TextView access$14(com.spatialind.imoboard.ContactActivity) -> i
+    float access$15(com.spatialind.imoboard.ContactActivity) -> j
+    com.spatialind.imoboard.ShipCompassView access$16(com.spatialind.imoboard.ContactActivity) -> k
+com.spatialind.imoboard.ContactActivity$1 -> com.spatialind.imoboard.g:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onCourseChanged(int,float) -> a
+    void onBearingChanged(int,float) -> b
+com.spatialind.imoboard.ContactActivity$2 -> com.spatialind.imoboard.f:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onCourseChanged(int,float) -> a
+    void onBearingChanged(int,float) -> b
+com.spatialind.imoboard.ContactActivity$3 -> com.spatialind.imoboard.o:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onTimeChanged(android.widget.TimePicker,int,int) -> onTimeChanged
+com.spatialind.imoboard.ContactActivity$4 -> com.spatialind.imoboard.p:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    android.widget.EditText val$bearingEditText -> b
+    android.widget.EditText val$rangeEditText -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactActivity$5 -> com.spatialind.imoboard.q:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactActivity$6 -> com.spatialind.imoboard.r:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    android.widget.EditText val$courseEditText -> b
+    android.widget.EditText val$speedEditText -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactActivity$7 -> com.spatialind.imoboard.l:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactActivity$8 -> com.spatialind.imoboard.m:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactActivity$9 -> com.spatialind.imoboard.n:
+    com.spatialind.imoboard.ContactActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactDatabaseAdapter -> com.spatialind.imoboard.s:
+    android.database.sqlite.SQLiteDatabase db -> a
+    android.content.Context context -> b
+    com.spatialind.imoboard.ContactDatabaseAdapter$ContactDBOpenHelper dbHelper -> c
+    void close() -> a
+    void open() -> b
+    float getContactCourse(java.lang.String) -> a
+    float getOwnShipCourse(java.lang.String) -> b
+    float getContactSpeed(java.lang.String) -> c
+    float getOwnShipSpeed(java.lang.String) -> d
+    android.database.Cursor getCursorOfContacts() -> c
+    android.database.Cursor getCursorOfObservations(java.lang.String) -> e
+    long addContact$44bc2633(java.lang.String) -> f
+    long addOwnShipCourseAndSpeed$44bc2633(java.lang.String) -> g
+    long updateContactCourseAndSpeed(java.lang.String,float,float) -> a
+    long updateOwnShipCourseAndSpeed(java.lang.String,float,float) -> b
+    long addObservation(java.lang.String,float,float,java.lang.String) -> a
+    long updateObservation(long,float,float,java.lang.String) -> a
+    void deleteContact(java.lang.String) -> h
+    void deleteObservation(long) -> a
+    void clearContacts() -> d
+    void clearObservations(java.lang.String) -> i
+    android.content.ContentValues createContentValues(java.lang.String,java.lang.String,java.lang.String) -> a
+    android.database.sqlite.SQLiteDatabase access$0() -> e
+com.spatialind.imoboard.ContactDatabaseAdapter$ContactDBOpenHelper -> com.spatialind.imoboard.z:
+    android.content.Context helperContext -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void close() -> close
+com.spatialind.imoboard.ContactListActivity -> com.spatialind.imoboard.ContactListActivity:
+    android.database.Cursor cursor -> a
+    java.lang.String contactID -> b
+    com.spatialind.imoboard.ContactDatabaseAdapter db -> c
+    int ADD_CONTACT_DIALOG_ID -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    void showClearContactsDialog() -> a
+    void fillData() -> b
+    void access$0(com.spatialind.imoboard.ContactListActivity,java.lang.String) -> a
+    void access$1(com.spatialind.imoboard.ContactListActivity) -> a
+    void access$2(com.spatialind.imoboard.ContactListActivity,java.lang.String) -> b
+    void access$3(com.spatialind.imoboard.ContactListActivity) -> b
+    void access$4(com.spatialind.imoboard.ContactListActivity) -> c
+com.spatialind.imoboard.ContactListActivity$1 -> com.spatialind.imoboard.v:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    android.widget.EditText val$targetEditText -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactListActivity$2 -> com.spatialind.imoboard.w:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactListActivity$3 -> com.spatialind.imoboard.t:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    java.lang.String val$contact -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactListActivity$4 -> com.spatialind.imoboard.u:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactListActivity$5 -> com.spatialind.imoboard.c:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactListActivity$6 -> com.spatialind.imoboard.b:
+    com.spatialind.imoboard.ContactListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ContactTabActivity -> com.spatialind.imoboard.ContactTabActivity:
+    java.lang.String contactName -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.spatialind.imoboard.InfoActivity -> com.spatialind.imoboard.InfoActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.spatialind.imoboard.InfoActivity$1 -> com.spatialind.imoboard.al:
+    com.spatialind.imoboard.InfoActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity -> com.spatialind.imoboard.ManeuveringBoardActivity:
+    float range -> a
+    float bearing -> b
+    float ownCourse -> c
+    float ownSpeed -> d
+    com.spatialind.imoboard.Contact contact -> e
+    int obs_hour -> f
+    int obs_minute -> g
+    int scale -> h
+    boolean useRecentData -> i
+    android.database.Cursor cursor -> j
+    java.lang.String contactName -> k
+    com.spatialind.imoboard.ContactDatabaseAdapter db -> l
+    android.content.SharedPreferences preferences -> m
+    com.spatialind.imoboard.ManeuveringBoardView moboardView -> n
+    android.widget.LinearLayout moboLinearLayout -> o
+    android.widget.TextView moboTextView -> p
+    android.view.LayoutInflater inflater -> q
+    android.app.AlertDialog$Builder builder -> r
+    android.app.AlertDialog dialog -> s
+    android.widget.TextView contactDrmLabelTextView -> t
+    android.widget.TextView contactDrmTextView -> u
+    android.widget.TextView contactSrmLabelTextView -> v
+    android.widget.TextView contactSrmTextView -> w
+    android.widget.TextView contactCourseLabelTextView -> x
+    android.widget.TextView contactCourseTextView -> y
+    android.widget.TextView contactSpeedLabelTextView -> z
+    android.widget.TextView contactSpeedTextView -> A
+    android.widget.TextView cpaBearingLabelTextView -> B
+    android.widget.TextView cpaBearingTextView -> C
+    android.widget.TextView cpaRangeLabelTextView -> D
+    android.widget.TextView cpaRangeTextView -> E
+    android.widget.TextView cpaTimeAtLabelTextView -> F
+    android.widget.TextView cpaTimeAtTextView -> G
+    android.widget.TextView cpaTimeToLabelTextView -> H
+    android.widget.TextView cpaTimeToTextView -> I
+    android.widget.TextView contactHeaderTextView -> J
+    android.widget.TextView cpaHeaderTextView -> K
+    java.util.ArrayList targets -> L
+    int ADD_OBS_DIALOG_ID -> M
+    int UPDATE_OWNSHIP_DIALOG_ID -> N
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    void updateMoboardFromPreferences() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void fillData() -> b
+    void updateCalculations() -> c
+    void access$0(com.spatialind.imoboard.ManeuveringBoardActivity,int) -> a
+    void access$1(com.spatialind.imoboard.ManeuveringBoardActivity,int) -> b
+    int access$2(com.spatialind.imoboard.ManeuveringBoardActivity) -> a
+    void access$3(com.spatialind.imoboard.ManeuveringBoardActivity,float) -> a
+    void access$4(com.spatialind.imoboard.ManeuveringBoardActivity,float) -> b
+    float access$5(com.spatialind.imoboard.ManeuveringBoardActivity) -> b
+    float access$6(com.spatialind.imoboard.ManeuveringBoardActivity) -> c
+    void access$7(com.spatialind.imoboard.ManeuveringBoardActivity) -> d
+    void access$8(com.spatialind.imoboard.ManeuveringBoardActivity,float) -> c
+    void access$9(com.spatialind.imoboard.ManeuveringBoardActivity,float) -> d
+    float access$10(com.spatialind.imoboard.ManeuveringBoardActivity) -> e
+    float access$11(com.spatialind.imoboard.ManeuveringBoardActivity) -> f
+    void access$12(com.spatialind.imoboard.ManeuveringBoardActivity) -> g
+    void access$13(com.spatialind.imoboard.ManeuveringBoardActivity) -> h
+    void access$14(com.spatialind.imoboard.ManeuveringBoardActivity) -> i
+com.spatialind.imoboard.ManeuveringBoardActivity$1 -> com.spatialind.imoboard.a:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    void onTimeChanged(android.widget.TimePicker,int,int) -> onTimeChanged
+com.spatialind.imoboard.ManeuveringBoardActivity$2 -> com.spatialind.imoboard.i:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    android.widget.EditText val$bearingEditText -> b
+    android.widget.EditText val$rangeEditText -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity$3 -> com.spatialind.imoboard.h:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity$4 -> com.spatialind.imoboard.k:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    android.widget.EditText val$courseEditText -> b
+    android.widget.EditText val$speedEditText -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity$5 -> com.spatialind.imoboard.j:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity$6 -> com.spatialind.imoboard.e:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardActivity$7 -> com.spatialind.imoboard.d:
+    com.spatialind.imoboard.ManeuveringBoardActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ManeuveringBoardView -> com.spatialind.imoboard.ManeuveringBoardView:
+    int textHeight -> a
+    int scale -> b
+    int colorMode -> c
+    boolean showObservationTime -> d
+    boolean showDegrees -> e
+    boolean showCPA -> f
+    boolean useRecentObservations -> g
+    boolean roundValues -> h
+    boolean showBacklight -> i
+    android.graphics.Paint markerPaint -> j
+    android.graphics.Paint degreesTextPaint -> k
+    android.graphics.Paint cpaTextPaint -> l
+    android.graphics.Paint circlePaint -> m
+    android.graphics.Paint testPaint -> n
+    android.graphics.Paint outerRangePaint -> o
+    android.graphics.Paint rangePaint -> p
+    android.graphics.Paint relativeTrackPaint -> q
+    android.graphics.Paint cpaPaint -> r
+    android.graphics.Paint scalePaint -> s
+    java.util.ArrayList contactList -> t
+    com.spatialind.imoboard.Contact contact -> u
+    float ownShipCourse -> v
+    float ownShipSpeed -> w
+    int COLOR_MODE_DARK -> x
+    int COLOR_MODE_LIGHT -> y
+    void setTargetList(java.util.ArrayList) -> setTargetList
+    void setShowCPA(boolean) -> setShowCPA
+    void setShowDegrees(boolean) -> setShowDegrees
+    void setShowObservationTime(boolean) -> setShowObservationTime
+    void setUseFirstAndLastObservations(boolean) -> setUseFirstAndLastObservations
+    void setRoundValues(boolean) -> setRoundValues
+    void setScale(int) -> setScale
+    void setContact(com.spatialind.imoboard.Contact) -> setContact
+    void setOwnShipCourse(float) -> setOwnShipCourse
+    void setOwnShipSpeed(float) -> setOwnShipSpeed
+    void setColorMode(int) -> setColorMode
+    void setShowBacklight(boolean) -> setShowBacklight
+    void onMeasure(int,int) -> onMeasure
+    void initMoBoView() -> a
+    void updateColors() -> b
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void drawContact(int,int,int,android.graphics.Canvas) -> a
+    void drawPoint(android.graphics.PointF,int,int,int,android.graphics.Canvas,android.graphics.Paint) -> a
+    void drawLine(android.graphics.PointF,android.graphics.PointF,int,int,int,android.graphics.Canvas,android.graphics.Paint) -> a
+com.spatialind.imoboard.MoboUtilities -> com.spatialind.imoboard.x:
+    int calculateShortestDistanceToLine(android.graphics.PointF,android.graphics.PointF,android.graphics.PointF) -> a
+    android.graphics.PointF getPointFromRangeAndBearing(float,float) -> a
+    android.graphics.PointF getPointFromRangeAndBearing(android.graphics.PointF,float,float) -> a
+    double getAngleBetweenPoints(android.graphics.PointF,android.graphics.PointF) -> a
+    float getSlopeBetweenPoints(android.graphics.PointF,android.graphics.PointF) -> b
+    double getDistanceBetweenPoints(android.graphics.PointF,android.graphics.PointF) -> c
+com.spatialind.imoboard.Observation -> com.spatialind.imoboard.ac:
+    java.util.Date time -> a
+    com.spatialind.imoboard.ObservationType observationType -> b
+    float bearing -> c
+    float range -> d
+    void setTime(java.util.Date) -> a
+    java.util.Date getTime() -> a
+    void setObservationType(com.spatialind.imoboard.ObservationType) -> a
+    com.spatialind.imoboard.ObservationType getObservationType() -> b
+    void setBearing(float) -> a
+    float getBearing() -> c
+    void setRange(float) -> b
+    float getRange() -> d
+com.spatialind.imoboard.ObservationListActivity -> com.spatialind.imoboard.ObservationListActivity:
+    java.lang.String bearingText -> a
+    java.lang.String rangeText -> b
+    float bearing -> c
+    float range -> d
+    int obs_hour -> e
+    int obs_minute -> f
+    long selectedIndex -> g
+    android.database.Cursor cursor -> h
+    java.lang.String targetName -> i
+    com.spatialind.imoboard.ContactDatabaseAdapter db -> j
+    android.widget.TextView targetTextView -> k
+    android.view.LayoutInflater inflater -> l
+    android.view.View layout -> m
+    android.widget.EditText bearingEditText -> n
+    android.widget.EditText rangeEditText -> o
+    android.widget.TimePicker timePicker -> p
+    android.app.AlertDialog$Builder builder -> q
+    android.app.AlertDialog dialog -> r
+    int ADD_OBS_DIALOG_ID -> s
+    int EDIT_OBS_DIALOG_ID -> t
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    boolean showClearObservationsDialog() -> a
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void fillData() -> b
+    void access$0(com.spatialind.imoboard.ObservationListActivity,int) -> a
+    void access$1(com.spatialind.imoboard.ObservationListActivity,int) -> b
+    int access$2(com.spatialind.imoboard.ObservationListActivity) -> a
+    android.widget.EditText access$3(com.spatialind.imoboard.ObservationListActivity) -> b
+    void access$4(com.spatialind.imoboard.ObservationListActivity,float) -> a
+    android.widget.EditText access$5(com.spatialind.imoboard.ObservationListActivity) -> c
+    void access$6(com.spatialind.imoboard.ObservationListActivity,float) -> b
+    void access$7(com.spatialind.imoboard.ObservationListActivity) -> d
+    void access$8(com.spatialind.imoboard.ObservationListActivity) -> e
+    void access$9(com.spatialind.imoboard.ObservationListActivity) -> f
+    void access$10(com.spatialind.imoboard.ObservationListActivity,long) -> a
+    void access$11(com.spatialind.imoboard.ObservationListActivity) -> g
+com.spatialind.imoboard.ObservationListActivity$1 -> com.spatialind.imoboard.af:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onTimeChanged(android.widget.TimePicker,int,int) -> onTimeChanged
+com.spatialind.imoboard.ObservationListActivity$10 -> com.spatialind.imoboard.ap:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$2 -> com.spatialind.imoboard.ad:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$3 -> com.spatialind.imoboard.ab:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$4 -> com.spatialind.imoboard.aa:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onTimeChanged(android.widget.TimePicker,int,int) -> onTimeChanged
+com.spatialind.imoboard.ObservationListActivity$5 -> com.spatialind.imoboard.aj:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$6 -> com.spatialind.imoboard.ai:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$7 -> com.spatialind.imoboard.ah:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$8 -> com.spatialind.imoboard.ag:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationListActivity$9 -> com.spatialind.imoboard.aq:
+    com.spatialind.imoboard.ObservationListActivity this$0 -> a
+    long val$id -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.spatialind.imoboard.ObservationType -> com.spatialind.imoboard.ao:
+    com.spatialind.imoboard.ObservationType BearingOnly -> b
+    com.spatialind.imoboard.ObservationType BearingAndDistance -> a
+    com.spatialind.imoboard.ObservationType[] ENUM$VALUES -> c
+    com.spatialind.imoboard.ObservationType[] values() -> values
+    com.spatialind.imoboard.ObservationType valueOf(java.lang.String) -> valueOf
+com.spatialind.imoboard.OnShipCompassListener -> com.spatialind.imoboard.y:
+    void onCourseChanged(int,float) -> a
+    void onBearingChanged(int,float) -> b
+com.spatialind.imoboard.ShipCompassView -> com.spatialind.imoboard.ShipCompassView:
+    boolean bearingMode -> a
+    float bearing -> b
+    float course -> c
+    int textHeight -> d
+    int identifier -> e
+    android.graphics.Paint markerPaint -> f
+    android.graphics.Paint textPaint -> g
+    android.graphics.Paint circlePaint -> h
+    android.graphics.Paint testPaint -> i
+    java.lang.String northString -> j
+    java.lang.String eastString -> k
+    java.lang.String southString -> l
+    java.lang.String westString -> m
+    int screenCenterPixelX -> n
+    android.view.GestureDetector gestures -> o
+    com.spatialind.imoboard.OnShipCompassListener onShipCompassListener -> p
+    void setBearingMode(boolean) -> setBearingMode
+    void setBearing(float) -> setBearing
+    void setCourse(float) -> setCourse
+    void setIdentifier(int) -> setIdentifier
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onMeasure(int,int) -> onMeasure
+    void initMoBoView() -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void setOnShipCompassListener(com.spatialind.imoboard.OnShipCompassListener) -> setOnShipCompassListener
+    boolean access$0(com.spatialind.imoboard.ShipCompassView) -> a
+    int access$1(com.spatialind.imoboard.ShipCompassView) -> b
+    float access$2(com.spatialind.imoboard.ShipCompassView) -> c
+    void access$3(com.spatialind.imoboard.ShipCompassView,float) -> a
+    void access$4(com.spatialind.imoboard.ShipCompassView,int) -> a
+    float access$5(com.spatialind.imoboard.ShipCompassView) -> d
+    void access$6(com.spatialind.imoboard.ShipCompassView,float) -> b
+    void access$7(com.spatialind.imoboard.ShipCompassView,int) -> b
+com.spatialind.imoboard.ShipCompassView$GestureListener -> com.spatialind.imoboard.ak:
+    com.spatialind.imoboard.ShipCompassView this$0 -> a
+    boolean onDown(android.view.MotionEvent) -> onDown
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+com.spatialind.imoboard.SplashActivity -> com.spatialind.imoboard.SplashActivity:
+    byte[] SALT -> a
+    com.android.vending.licensing.LicenseCheckerCallback mLicenseCheckerCallback -> b
+    com.android.vending.licensing.LicenseChecker mChecker -> c
+    android.os.Handler mHandler -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void access$0(com.spatialind.imoboard.SplashActivity,java.lang.String) -> a
+com.spatialind.imoboard.SplashActivity$1 -> com.spatialind.imoboard.an:
+    com.spatialind.imoboard.SplashActivity this$0 -> a
+    java.lang.String val$result -> b
+    void run() -> run
+com.spatialind.imoboard.SplashActivity$MyLicenseCheckerCallback -> com.spatialind.imoboard.ae:
+    com.spatialind.imoboard.SplashActivity this$0 -> a
+    void allow() -> a
+    void dontAllow() -> b
+    void applicationError$3f9ec153() -> c
+com.spatialind.imoboard.UnlicensedActivity -> com.spatialind.imoboard.UnlicensedActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.spatialind.imoboard.UserPreferences -> com.spatialind.imoboard.UserPreferences:
+    void onCreate(android.os.Bundle) -> onCreate

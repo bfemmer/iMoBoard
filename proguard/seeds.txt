@@ -1,0 +1,49 @@
+com.android.vending.licensing.ILicensingService
+com.spatialind.imoboard.ShipCompassView
+com.spatialind.imoboard.ShipCompassView: ShipCompassView(android.content.Context,android.util.AttributeSet)
+com.spatialind.imoboard.ManeuveringBoardView
+com.spatialind.imoboard.ManeuveringBoardView: ManeuveringBoardView(android.content.Context,android.util.AttributeSet)
+com.spatialind.imoboard.ShipCompassView
+com.spatialind.imoboard.ShipCompassView: ShipCompassView(android.content.Context,android.util.AttributeSet,int)
+com.spatialind.imoboard.ManeuveringBoardView
+com.spatialind.imoboard.ManeuveringBoardView: ManeuveringBoardView(android.content.Context,android.util.AttributeSet,int)
+com.spatialind.imoboard.ObservationType: com.spatialind.imoboard.ObservationType[] values()
+com.spatialind.imoboard.ObservationType: com.spatialind.imoboard.ObservationType valueOf(java.lang.String)
+com.android.vending.licensing.Policy$LicenseResponse: com.android.vending.licensing.Policy$LicenseResponse[] values()
+com.android.vending.licensing.Policy$LicenseResponse: com.android.vending.licensing.Policy$LicenseResponse valueOf(java.lang.String)
+com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode: com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode[] values()
+com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode: com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode valueOf(java.lang.String)
+com.spatialind.imoboard.ContactActivity
+com.spatialind.imoboard.SplashActivity
+com.spatialind.imoboard.UnlicensedActivity
+com.spatialind.imoboard.ManeuveringBoardActivity
+com.spatialind.imoboard.InfoActivity
+com.spatialind.imoboard.ContactTabActivity
+com.spatialind.imoboard.ObservationListActivity
+com.spatialind.imoboard.ContactListActivity
+com.spatialind.imoboard.UserPreferences
+com.spatialind.imoboard.ShipCompassView
+com.spatialind.imoboard.ShipCompassView: ShipCompassView(android.content.Context)
+com.spatialind.imoboard.ShipCompassView: ShipCompassView(android.content.Context,android.util.AttributeSet)
+com.spatialind.imoboard.ShipCompassView: ShipCompassView(android.content.Context,android.util.AttributeSet,int)
+com.spatialind.imoboard.ShipCompassView: void setBearingMode(boolean)
+com.spatialind.imoboard.ShipCompassView: void setBearing(float)
+com.spatialind.imoboard.ShipCompassView: void setCourse(float)
+com.spatialind.imoboard.ShipCompassView: void setIdentifier(int)
+com.spatialind.imoboard.ShipCompassView: void setOnShipCompassListener(com.spatialind.imoboard.OnShipCompassListener)
+com.spatialind.imoboard.ManeuveringBoardView
+com.spatialind.imoboard.ManeuveringBoardView: ManeuveringBoardView(android.content.Context)
+com.spatialind.imoboard.ManeuveringBoardView: ManeuveringBoardView(android.content.Context,android.util.AttributeSet)
+com.spatialind.imoboard.ManeuveringBoardView: ManeuveringBoardView(android.content.Context,android.util.AttributeSet,int)
+com.spatialind.imoboard.ManeuveringBoardView: void setTargetList(java.util.ArrayList)
+com.spatialind.imoboard.ManeuveringBoardView: void setShowCPA(boolean)
+com.spatialind.imoboard.ManeuveringBoardView: void setShowDegrees(boolean)
+com.spatialind.imoboard.ManeuveringBoardView: void setShowObservationTime(boolean)
+com.spatialind.imoboard.ManeuveringBoardView: void setUseFirstAndLastObservations(boolean)
+com.spatialind.imoboard.ManeuveringBoardView: void setRoundValues(boolean)
+com.spatialind.imoboard.ManeuveringBoardView: void setScale(int)
+com.spatialind.imoboard.ManeuveringBoardView: void setContact(com.spatialind.imoboard.Contact)
+com.spatialind.imoboard.ManeuveringBoardView: void setOwnShipCourse(float)
+com.spatialind.imoboard.ManeuveringBoardView: void setOwnShipSpeed(float)
+com.spatialind.imoboard.ManeuveringBoardView: void setColorMode(int)
+com.spatialind.imoboard.ManeuveringBoardView: void setShowBacklight(boolean)

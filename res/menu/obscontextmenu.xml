@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/obscontextedit" android:title="@string/edit_obs_caption"></item><item android:id="@+id/obscontextdelete" android:title="@string/delete_obs_string"></item>
+    <item android:id="@+id/obscontextclear" android:title="@string/clear_all_obs_string"></item>
+    
+</menu>

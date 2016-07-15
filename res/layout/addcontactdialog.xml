@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/addTargetRoot"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	 <TableLayout
+		  android:id="@+id/Table01"
+		  android:orientation="horizontal"
+		  android:gravity="center"
+		  android:stretchColumns="*"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  <TableRow
+		  		android:id="@+id/tableRow01"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal">
+			<TextView  	      
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:text="@string/name_label"
+		    	/>
+		    <EditText
+				android:id="@+id/nameText"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:maxLines="1"
+			    android:hint="M67"
+		    	/>
+		 </TableRow>
+	 </TableLayout>
+</LinearLayout>

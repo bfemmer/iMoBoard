@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<TextView  
+		android:id="@+id/titleTextView01"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="iMoBoard"
+		android:textSize="36dp"
+		/>
+	<TextView  
+		android:id="@+id/titleTextView02"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Maneuvering Board Application"
+		android:textSize="18dp"
+		/>
+	<TextView  
+		android:id="@+id/titleTextView03"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Version 1.0.0 for Android"
+		android:textSize="12dp"
+		/>
+	<TextView  
+		android:id="@+id/infoTitleSpacer01"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="   "
+		android:textSize="12dp"
+		/>
+	<ImageView android:id="@+id/dbBlackImage" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+  		android:gravity="center"
+  		android:src="@drawable/moboard_app_icon" 
+  		/>
+  	<TextView  
+		android:id="@+id/infoTitleSpacer02"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="   "
+		android:textSize="12dp"
+		/>
+  	<TextView  
+		android:id="@+id/companyTextView"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:text="Copyright 2011 Spatial Industries, Inc."
+		android:textSize="12dp"
+		/>
+	<TextView  
+		android:id="@+id/webTextView"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:text="http://www.maneuveringboard.com"
+		android:textSize="12dp"
+		/>
+	<TextView  
+		android:id="@+id/emailTextView"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:text="support@maneuveringboard.com"
+		android:textSize="12dp"
+		/>
+</LinearLayout>

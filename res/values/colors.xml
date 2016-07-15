@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="opaque_red">#F00</color>
+	<color name="translucent_red">#80FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="blue">#00F</color>
+    <color name="navy">#008</color>
+    <color name="marker_color">#AFFF</color>
+    <color name="text_color">#AFFF</color>
+    <color name="board_color">#000</color>
+    <color name="grid_color">#0A0</color>
+    <color name="grid_translucent_color">#A0A0</color>
+    <color name="lime">#32CD32</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="testblue">#3232CD</color>
+    <color name="green">#00AA00</color>
+</resources>

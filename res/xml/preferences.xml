@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<PreferenceCategory android:title="@string/moboard_string">
+		<ListPreference  
+		    android:key="PREF_SCALE"
+		    android:title="@string/scale_string"
+		    android:summary="@string/scale_pref_summary_string"
+		    android:entries="@array/scaleFormats"
+		    android:dialogTitle="@string/select_scale_string"
+		    android:defaultValue="3" 
+		    android:entryValues="@array/scaleFormatValues"
+		    />
+		<CheckBoxPreference  
+		    android:key="PREF_SHOW_OBS_TIME"
+		    android:title="@string/show_obs_time_string"
+		    android:summary="@string/show_obs_time_summary_string" 
+		    android:defaultValue="true"/>
+		<CheckBoxPreference  
+		    android:key="PREF_SHOW_DEGREES"
+		    android:title="@string/show_degrees_string"
+		    android:summary="@string/show_degrees_sumary_string"
+		    android:defaultValue="true" 
+		    />
+		<CheckBoxPreference  
+		    android:key="PREF_SHOW_CPA"
+		    android:title="@string/show_cpa_string"
+		    android:summary="@string/show_cpa_summary_string"
+		    android:defaultValue="true" 
+		    />
+	</PreferenceCategory>
+    <PreferenceCategory android:title="@string/calculations_string">
+    	<CheckBoxPreference  
+		    android:key="PREF_ROUND_VALUES"
+		    android:title="@string/round_values_string"
+		    android:summary="@string/round_values_summary_string"
+		    android:defaultValue="false" 
+		    />
+		<ListPreference  
+		    android:key="PREF_USE_RECENT_DATA"
+		    android:title="@string/contact_data_source_string"
+		    android:summary="@string/contact_data_source_summary_string"
+		    android:entries="@array/targetDataInputFormats"
+		    android:dialogTitle="@string/select_data_to_use_string"
+		    android:defaultValue="@string/first_and_last_obs_string" 
+		    android:entryValues="@array/targetDataInputFormatValues"
+		    />
+    </PreferenceCategory>
+</PreferenceScreen>
